@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        .tabla {
+            background-color: black;
+            margin: auto;
+            border-radius: 5%;
+        }
+
+        td {
+            padding: 1rem;
+        }
+
+        body {
+            background-color: rgb(40, 40, 40);
+        }
+
+        h1,
+        span {
+            text-align: center;
+            color: white;
+            margin: 2rem 0 2rem 0;
+        }
+
+        .btn {
+            font-size: 2.5rem;
+            border-radius: 10%;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+    
+        .historial,
+        .resultado,
+        .valores {
+            background-color: white;
+            color: blue;
+            font-weight: bold;
+            border: 2px rgb(105, 105, 105) solid;
+        }
+
+        .form-control {
+            width: 400px;
+            height: 41px;
+            margin: auto auto 2rem auto;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .marca, .marca:hover{
+            background-color: rgb(12, 0, 43);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: .5rem;
+            cursor: auto;
+            border: 1px rgb(21, 0, 80) solid ;
+        }
+
+
+        .btn-warning{
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <section class="container">
+            <h1>Calculator</h1>
+
+            <!-- calculadora en tabla-->
+            <span for="exampleFormControlInput1" class="form-control" id="historial"></span>
+            <input type="text" class="form-control" id="numero_ingresado" value="">
+            <table class="tabla">
+                <tbody>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn7" style="width: 4rem;">7</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn8" style="width: 4rem;">8</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn9" style="width: 4rem;">9</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btnMultiplicar"
+                                style="width: 4rem;">x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn4" style="width: 4rem;">4</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn5" style="width: 4rem;">5</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn6" style="width: 4rem;">6</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btnRestar" style="width: 4rem;">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn1" style="width: 4rem;">1</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn2" style="width: 4rem;">2</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn3" style="width: 4rem;">3</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btnSumar" style="width: 4rem;">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btnDividir" style="width: 4rem;">/</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btn0" style="width: 4rem;">0</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-dark" id="btnPunto" style="width: 4rem;">.</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" id="btnIgual" style="width: 4rem;">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <button type="button" class="btn btn-warning" id="btnBorrar" style="width: 4rem;">C</button>
+                        </td>
+                        <td colspan="3">
+                            <button type="button" class="btn btn-light marca"><a href="https://mexico.generation.org/" target="_blank">Generation MX</a></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- ================= JAVASCRIPT ================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
